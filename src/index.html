@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 
 <body>
 
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <div class="header">
                 <a href="" class="header__logo">
@@ -59,9 +60,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="advantage">
+    <section class="advantage">
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantage__wrapper">
@@ -85,22 +86,48 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">Получите бесплатную консультациюпо<br> подбору пульсометра </h2>
             <div class="consultation__descr">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#">
+            <form class="feed-form" action="#">
                 <label>
-                    <input type="text">
+                    <input name="name" required placeholder="Ваше имя" type="text">
+                    <input name="phone" required placeholder="Ваш телефон" type="number">
+                    <input name="email" required placeholder="Ваш E-mail" type="email">
+                    <!-- <textarea style="resize: none;" name="" id=""></textarea -->
+                    <!-- <input type="submit" value="заказать консультацию"> -->
+                    <button class="button button_submit">заказать консультацию</button>
+                    <!-- <input type="reset"> -->
                 </label>
 
             </form>
         </div>
-    </div>
+    </section>
 
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slide_2.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slide_3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
