@@ -17,9 +17,17 @@
         font-weight: 300;
         line-height: 18px;
 
-        img {
+        &-img {
             width: 70px;
             height: 70px;
+
+            &_animated {
+                animation: heartbeat 1.5s ease infinite;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
         }
 
         &-title {

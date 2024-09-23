@@ -9,13 +9,14 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 
 <body>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <div class="header">
                 <a href="" class="header__logo">
@@ -69,19 +70,19 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantage__wrapper">
                 <div class="advantage__card">
-                    <img src="icons/cup.png" alt="cup">
+                    <img src="icons/cup.png" alt="cup" class="advantage__card-img">
                     <div class="advantage__card-title">Делимся опытом</div>
                     <div class="advantage__card-descr"> Наши сотрудники всегда готовы поделиться своим опытом, так как
                         сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantage__card">
-                    <img src="icons/heart.png" alt="heart">
+                    <img src="icons/heart.png" alt="heart" class="advantage__card-img advantage__card-img_animated">
                     <div class="advantage__card-title">Заботимся о здоровье</div>
                     <div class="advantage__card-descr"> Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
                         Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="advantage__card">
-                    <img src="icons/shoe.png" alt="shoe">
+                    <img src="icons/shoe.png" alt="shoe" class="advantage__card-img">
                     <div class="advantage__card-title">Учим бегать</div>
                     <div class="advantage__card-descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей
                         школой бега в России - <a href="#">I LOVE RUNNING.</a></div>
@@ -415,7 +416,8 @@
     <section class="review">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="review__block">
+            <div class="review__block wow animate__animated animate__fadeInUp" data-wow-duration="2s"
+                data-wow-delay="1s">
                 <img src="img/reviewer_1.png" alt="reivewer" class="review__img">
                 <div class="review__text">
                     <h4 class="review__title">Ирина Иванченко</h4>
@@ -428,7 +430,8 @@
                     </div>
                 </div>
             </div>
-            <div class="review__block">
+            <div class="review__block wow animate__animated animate__fadeInUp" data-wow-duration="2s"
+                data-wow-delay="1s">
                 <img src="img/reviewer_2.png" alt="reivewer" class="review__img">
                 <div class="review__text">
                     <h4 class="review__title">Иван Сёмочкин</h4>
@@ -441,7 +444,8 @@
                         Спасибо!!!</div>
                 </div>
             </div>
-            <div class="review__block">
+            <div class="review__block wow animate__animated animate__fadeInUp" data-wow-duration="2s"
+                data-wow-delay="1s">
                 <img src="img/reviewer_3.png" alt="reviewer" class="review__img">
                 <div class="review__text">
                     <h4 class="review__title">Юлия Дашкина</h4>
@@ -484,7 +488,7 @@
             <form class="feed-form feed-form_mt25" action="#">
                 <label>
                     <input name="name" placeholder="Ваше имя" type="text">
-                    <input name="phone" placeholder="Ваш телефон" >
+                    <input name="phone" placeholder="Ваш телефон">
                     <input name="email" placeholder="Ваш E-mail" type="email">
                     <!-- <textarea style="resize: none;" name="" id=""></textarea -->
                     <!-- <input type="submit" value="заказать консультацию"> -->
@@ -502,7 +506,7 @@
             <form class="feed-form feed-form_mt25" action="#">
                 <label>
                     <input name="name" required placeholder="Ваше имя" type="text">
-                    <input name="phone" required placeholder="Ваш телефон" >
+                    <input name="phone" required placeholder="Ваш телефон">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
                     <!-- <textarea style="resize: none;" name="" id=""></textarea -->
                     <!-- <input type="submit" value="заказать консультацию"> -->
@@ -519,6 +523,11 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/arrow-up.svg" alt="up">
+    </a>
+
+
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script> -->
@@ -527,6 +536,7 @@
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
 
