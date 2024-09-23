@@ -4,6 +4,39 @@
     .container {
         padding: 0 10px;
     }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .carousel {
+        &__inner {
+            width: 100%;
+        }
+
+        .prev {
+            left: 0px;
+        }
+
+        .next {
+            left: auto;
+            right: -0px;
+        }
+
+        .tns-item {
+            img {
+                width: 500px;
+            }
+        }
+    }
+
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -35,9 +68,28 @@
         &__wrapper {
             flex-direction: column;
         }
+
         &__card {
             width: 70%;
             margin: 10px auto;
+        }
+    }
+
+    .carousel {
+
+
+        .prev {
+            display: none;
+        }
+
+        .next {
+            display: none;
+        }
+
+        .tns-item {
+            img {
+                width: 500px;
+            }
         }
     }
 
@@ -45,9 +97,11 @@
 
 @media (max-width: 575px) {
     .header {
+        justify-content: center;
         &__official {
             display: none;
         }
+
         &__contacts {
             display: none;
         }
@@ -56,16 +110,22 @@
     .promo {
         &__header {
             font-size: 25px;
+            text-align: center;
         }
+
         &__subheader {
             font-size: 20px;
+            text-align: center;
         }
+
         &__icons {
             flex-direction: column;
             width: 100%;
         }
+
         &__icon {
             width: 100%;
+            margin-bottom: 10px;
         }
     }
 
@@ -73,9 +133,16 @@
         &__title {
             font-size: 25px;
         }
+
         &__card {
             width: 90%;
             margin: 10px auto;
+        }
+    }
+
+    .catalog {
+        &__tab {
+            font-size: 12px;
         }
     }
 }

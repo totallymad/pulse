@@ -22,6 +22,7 @@ $(document).ready(function () {
         autoplay: false,
         controls: false,
         nav: false
+
     });
 
     document.querySelector('.prev').addEventListener('click', function () {
