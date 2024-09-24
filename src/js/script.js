@@ -21,8 +21,8 @@ $(document).ready(function () {
         slideBy: 'page',
         autoplay: false,
         controls: false,
-        nav: false
-
+        nav: true,
+        navPosition: 'bottom',
     });
 
     document.querySelector('.prev').addEventListener('click', function () {
